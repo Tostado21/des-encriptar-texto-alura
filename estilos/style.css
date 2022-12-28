@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Square+Peg&display=swap');
+
+/* -----------------------------lineamientos--------------------------- */
+:root {
+    /* Dark Blue */
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-450: #052051;
+    /* Light Blue */
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+    /* Gray */
+    --light-gray: #E5E5E5;
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-450: #343A40;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--light-blue-300);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------------------Header--------------------------- */
+header {
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo a {
+    width: 42px;
+}
+
+.sidebar {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+}
+
+/* -----------------------------body--------------------------- */
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+}
+
+/* secciones, div */
+.content {
+    margin-top: 24px;
+}
+
+.content-left {
+    width: 65%;
+    text-align: center;
+}
+
+.rectangle {
+    width: 35%;
+    text-align: center;
+}
+
+/* boton */
+.btn {
+    width: 40%;
+    border-radius: 24px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* -----------------------------content left--------------------------- */
+/* secciones, div */
+.frame1 {
+    padding-top: 15px;
+    height: 80%;
+}
+
+.frame2 {
+    padding-bottom: 34px;
+}
+
+.frame3 {
+    padding-bottom: 15px;
+}
+
+.frame2,
+.frame3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-frame2,
+.content-frame3 {
+    display: flex;
+}
+
+.content-frame2 {
+    justify-content: center;
+}
+
+.content-frame3 {
+    width: 70%;
+    justify-content: space-around;
+}
+
+/* imagenes,iconos, multimedia */
+.content-frame2 img {
+    padding: 2px;
+}
+
+/* titulos, subtitulos, parrafos, spam */
+.content-frame2 h3 {
+    display: inline;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-400);
+    margin-left: 10px;
+}
+
+/* formularios; inputs, textareas*/
+.content-left form {
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    border-radius: 32px;
+}
+
+.frame1 textarea {
+    width: 90%;
+    height: 90%;
+    border: none;
+    color: var(--dark-blue-300);
+    background: transparent;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 14px;
+    resize: none;
+}
+
+/* botones */
+
+.btn-encri {
+    border: none;
+    background-color: var(--dark-blue-300);
+    color: white;
+}
+
+.btn-desen {
+    border: 1px solid var(--dark-blue-300);
+    background-color: var(--light-blue-100);
+    color: var(--dark-blue-300);
+}
+
+/* -----------------------------content right--------------------------- */
+/* secciones, div */
+.content-inputs {
+    height: 95%;
+    display: none;
+    /* block */
+}
+
+.content-inputs,
+.content-info {
+    margin-right: 34px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    background-color: white;
+
+}
+
+.content-info {
+    display: grid;
+    /* grid */
+    place-items: center;
+    height: 95%;
+}
+
+.descrip {
+    width: 90%;
+    justify-self: center;
+    text-align: center;
+}
+
+/* imagenes,iconos, multimedia */
+.img-muñeco {
+    width: 90%;
+}
+
+/* titulos, subtitulos, parrafos, spam */
+.descrip-titulo {
+    font-style: normal;
+}
+
+.descrip h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--gray-450);
+}
+
+.descrip p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
+}
+
+/* formularios; inputs, textareas*/
+.content-inputs textarea {
+    width: 90%;
+    height: 80%;
+    border: none;
+    background: transparent;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+    resize: none;
+}
+
+/* botones */
+.btn-copy {
+    width: 55%;
+    border: 1px solid var(--dark-blue-300);
+    /* margin: 34px 0 15px 0; */
+    background-color: var(--light-blue-100);
+    color: var(--dark-blue-300);
+    margin-top: 34px;
+}
+
+
+/* -----------------------------footer--------------------------- */
+footer {
+    display: flex;
+    padding: 40px 0;
+    background: var(--dark-blue-300);
+    border-width: 0.3ex 0 0 0;
+    border-style: solid;
+    border-color: var(--light-gray);
+}
+
+.content-footer {
+    flex: auto;
+}
+
+.content-footer-img,
+.content-footer-text {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+
+.content-footer-img img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(131deg) brightness(101%) contrast(101%);
+}
+
+.content-footer-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.content-footer-icon div {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.div-icon1 {
+    margin-right: 10px;
+}
+
+.div-icon2 {
+    margin-left: 10px;
+}
+
+.content-footer-icon a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.content-footer-icon img {
+    width: 100%;
+    height: auto;
+}
+
+/* -----------------------------responsivo--------------------------- */
+/* Medidas estandar responsive
+- 1920×1080 (escritorio grande)
+- 1440×900 (escritorio medio)
+- 1366×768 (ordenador portátil medio)
+- 720×1280 (móvil grande)
+- 375×667 (móvil medio)
+- 360×640 (móvil pequeño)
+*/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media  screen and (min-width: 766px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* -----------------------------Header--------------------------- */
+    header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    /* -----------------------------body--------------------------- */
+    main {
+        display: block;
+        margin: 0;
+    }
+
+    /* secciones, div */
+    .content {
+        margin: 0;
+    }
+
+    .content-left,
+    .rectangle {
+        width: 100%;
+    }
+
+    .content-left {
+        height: 700px;
+    }
+
+    .rectangle {
+        height: 500px;
+    }
+
+    /* boton */
+    .btn {
+        width: 42%;
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    /* -----------------------------content left--------------------------- */
+    /* secciones, div */
+    .frame1 {
+        padding-top: 15px;
+        height: 80%;
+    }
+
+    .frame2,
+    .frame3 {
+        display: block;
+    }
+
+    .frame2 {
+        padding-bottom: 34px;
+    }
+
+    .frame3 {
+        padding-bottom: 15px;
+    }
+
+    .content-frame2 {
+        margin-left: 30px;
+    }
+
+    .content-frame3 {
+        width: 100%;
+    }
+
+    /* imagenes,iconos, multimedia */
+    .content-frame2 img {
+        width: 18;
+        height: auto;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .content-frame2 h3 {
+        font-size: 12px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-left form {
+        width: 95%;
+        height: 94.3%;
+        margin: 0 20px;
+    }
+
+    .frame1 textarea {
+        width: 94%;
+        height: 95%;
+        font-size: 16px;
+    }
+
+    /* botones */
+
+
+    /* -----------------------------content right--------------------------- */
+    /* secciones, div */
+    .content-inputs {
+        display: none;
+        /* block */
+        width: 95%;
+        height: 100%;
+        margin: 0 20px;
+    }
+
+    .content-info {
+        display: grid;
+        /* grid */
+        height: 35%;
+        margin: 0 18px;
+
+    }
+
+    /* imagenes,iconos, multimedia */
+    .img-muñeco {
+        display: none;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .descrip h2 {
+        font-size: 22px;
+        line-height: 150%;
+    }
+
+    .descrip p {
+        font-size: 16px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-inputs textarea {
+        width: 90%;
+        height: 78%;
+        font-size: 16px;
+    }
+
+    /* botones */
+    .btn-copy {
+        width: 46%;
+        margin-top: 14px;
+    }
+    /* -----------------------------footer--------------------------- */
+    footer {
+        display: block;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .content-footer {
+        padding: 10px 0;
+    }
+}
+@media  screen and (min-width: 766px) and (max-width: 1024px) and (orientation: landscape) {
+
+    /* -----------------------------Header--------------------------- */
+    header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    /* -----------------------------body--------------------------- */
+    main {
+        display: block;
+        margin: 0;
+    }
+
+    /* secciones, div */
+    .content {
+        margin: 0;
+    }
+
+    .content-left,
+    .rectangle {
+        width: 100%;
+    }
+
+    .content-left {
+        height: 700px;
+    }
+
+    .rectangle {
+        height: 500px;
+    }
+
+    /* boton */
+    .btn {
+        width: 42%;
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    /* -----------------------------content left--------------------------- */
+    /* secciones, div */
+    .frame1 {
+        padding-top: 15px;
+        height: 80%;
+    }
+
+    .frame2,
+    .frame3 {
+        display: block;
+    }
+
+    .frame2 {
+        padding-bottom: 34px;
+    }
+
+    .frame3 {
+        padding-bottom: 15px;
+    }
+
+    .content-frame2 {
+        margin-left: 30px;
+    }
+
+    .content-frame3 {
+        width: 100%;
+    }
+
+    /* imagenes,iconos, multimedia */
+    .content-frame2 img {
+        width: 18;
+        height: auto;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .content-frame2 h3 {
+        font-size: 12px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-left form {
+        width: 95%;
+        height: 94.3%;
+        margin: 0 20px;
+    }
+
+    .frame1 textarea {
+        width: 94%;
+        height: 95%;
+        font-size: 16px;
+    }
+
+    /* botones */
+
+
+    /* -----------------------------content right--------------------------- */
+    /* secciones, div */
+    .content-inputs {
+        display: none;
+        /* block */
+        width: 95%;
+        height: 100%;
+        margin: 0 20px;
+    }
+
+    .content-info {
+        display: grid;
+        /* grid */
+        height: 35%;
+        margin: 0 18px;
+
+    }
+
+    /* imagenes,iconos, multimedia */
+    .img-muñeco {
+        display: none;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .descrip h2 {
+        font-size: 22px;
+        line-height: 150%;
+    }
+
+    .descrip p {
+        font-size: 16px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-inputs textarea {
+        width: 90%;
+        height: 78%;
+        font-size: 16px;
+    }
+
+    /* botones */
+    .btn-copy {
+        width: 46%;
+        margin-top: 14px;
+    }
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media only screen and (min-width: 481px) and (max-width: 765px) {
+
+    /* -----------------------------Header--------------------------- */
+    header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    /* -----------------------------body--------------------------- */
+    main {
+        display: block;
+        margin: 0;
+    }
+
+    /* secciones, div */
+    .content {
+        margin: 0;
+    }
+
+    .content-left,
+    .rectangle {
+        width: 100%;
+    }
+
+    .content-left {
+        height: 500px;
+    }
+
+    .rectangle {
+        height: 450px;
+    }
+
+    /* boton */
+    .btn {
+        width: 90%;
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    /* -----------------------------content left--------------------------- */
+    /* secciones, div */
+    .frame1 {
+        height: 320px;
+    }
+
+    .frame2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    .content-frame2 {
+        width: 90%;
+        display: flex;
+    }
+
+    .frame3 {
+        display: block;
+    }
+
+    .content-frame3 {
+        width: 100%;
+        display: block;
+    }
+
+    /* imagenes,iconos, multimedia */
+    .content-frame2 img {
+        width: 6.5%;
+        height: auto;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .content-frame2 h3 {
+        font-size: 10px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-left form {
+        width: 100%;
+        height: 96%;
+    }
+
+    .frame1 textarea {
+        font-size: 12px;
+    }
+
+    /* botones */
+    .btn-encri {
+        margin-bottom: 8px;
+    }
+
+    .btn-desen {
+        margin-top: 8px;
+    }
+
+    /* -----------------------------content right--------------------------- */
+    /* secciones, div */
+    .content-inputs {
+        width: 100%;
+        height: 420px;
+        display: none;
+        /*block*/
+    }
+
+    .content-info {
+        display: grid;
+        /* grid */
+        width: 100%;
+        height: 25%;
+    }
+
+    .descrip {
+        width: 90%;
+        justify-self: center;
+        text-align: center;
+    }
+
+    /* imagenes,iconos, multimedia */
+    .img-muñeco {
+        display: none;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .descrip h2 {
+        font-size: 14px;
+    }
+
+    .descrip p {
+        font-size: 12px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-inputs textarea {
+        width: 90%;
+        height: 320px;
+        font-size: 14px;
+    }
+
+    /* botones */
+    .btn-copy {
+        width: 90%;
+        margin: 14px 0;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* -----------------------------Header--------------------------- */
+    header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    /* -----------------------------body--------------------------- */
+    main {
+        display: block;
+        margin: 0;
+    }
+
+    /* secciones, div */
+    .content {
+        margin: 0;
+    }
+
+    .content-left,
+    .rectangle {
+        width: 100%;
+    }
+
+    .content-left {
+        height: 500px;
+    }
+
+    .rectangle {
+        height: 450px;
+    }
+
+    /* boton */
+    .btn {
+        width: 90%;
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    /* -----------------------------content left--------------------------- */
+    /* secciones, div */
+    .frame1 {
+        height: 320px;
+    }
+
+    .frame2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    .content-frame2 {
+        width: 90%;
+        display: flex;
+    }
+
+    .frame3 {
+        display: block;
+    }
+
+    .content-frame3 {
+        width: 100%;
+        display: block;
+    }
+
+    /* imagenes,iconos, multimedia */
+    .content-frame2 img {
+        width: 6.5%;
+        height: auto;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .content-frame2 h3 {
+        font-size: 10px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-left form {
+        width: 100%;
+        height: 96%;
+    }
+
+    .frame1 textarea {
+        font-size: 12px;
+    }
+
+    /* botones */
+    .btn-encri {
+        margin-bottom: 8px;
+    }
+
+    .btn-desen {
+        margin-top: 8px;
+    }
+
+    /* -----------------------------content right--------------------------- */
+    /* secciones, div */
+    .content-inputs {
+        width: 100%;
+        height: 420px;
+        display: none;
+        /*block*/
+    }
+
+    .content-info {
+        display: grid;
+        /* grid */
+        width: 100%;
+        height: 25%;
+    }
+
+    .descrip {
+        width: 90%;
+        justify-self: center;
+        text-align: center;
+    }
+
+    /* imagenes,iconos, multimedia */
+    .img-muñeco {
+        display: none;
+    }
+
+    /* titulos, subtitulos, parrafos, spam */
+    .descrip h2 {
+        font-size: 14px;
+    }
+
+    .descrip p {
+        font-size: 12px;
+    }
+
+    /* formularios; inputs, textareas*/
+    .content-inputs textarea {
+        width: 90%;
+        height: 320px;
+        font-size: 14px;
+    }
+
+    /* botones */
+    .btn-copy {
+        width: 90%;
+        margin: 14px 0;
+    }
+
+    /* -----------------------------footer--------------------------- */
+    footer {
+        display: block;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .content-footer {
+        padding: 10px 0;
+    }
+}
