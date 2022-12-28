@@ -25,3 +25,5 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 El resultado debe ser mostrado en la pantalla.
 Extras:
 - Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+
+resultados https://tostado21.github.io/des-encriptar-texto-alura/
